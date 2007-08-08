@@ -16,6 +16,7 @@ BuildRequires: libgnomeprintui-devel >= 2.2
 BuildRequires: libglade2.0-devel
 BuildRequires: libgail-devel
 BuildRequires: libgnomeui2-devel
+BuildRequires: gnome-doc-utils
 BuildRequires: scrollkeeper
 BuildRequires: intltool
 BuildRequires: desktop-file-utils
