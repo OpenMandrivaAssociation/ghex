@@ -11,7 +11,6 @@ License: GPL
 Group: Editors
 Url: http://pluton.ijs.si/~jaka/gnome.html#GHEX
 Source: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: libgnomeprintui-devel >= 2.2
 BuildRequires: libglade2.0-devel
 BuildRequires: libgail-devel
