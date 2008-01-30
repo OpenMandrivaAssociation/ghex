@@ -5,7 +5,7 @@
 
 Name: %name
 Summary: GNOME Hexadecimal Editor
-Version: 2.21.4
+Version: 2.21.90
 Release: %mkrel 1
 License: GPL
 Group: Editors
