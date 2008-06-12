@@ -80,19 +80,25 @@ desktop-file-install --vendor="" \
 #done
 
 %post
+%if %mdkversion < 200900
 %update_scrollkeeper
 %post_install_gconf_schemas ghex2
 %update_icon_cache hicolor
+%endif
 
+%if %mdkversion < 200900
 %{update_menus}
+%endif
 
 %preun
 %preun_uninstall_gconf_schemas ghex2
 
+%if %mdkversion < 200900
 %postun
 %{clean_scrollkeeper}
 %{clean_menus}
 %clean_icon_cache hicolor
+%endif
 
 %if %mdkversion < 200900
 %post -n %libname -p /sbin/ldconfig
