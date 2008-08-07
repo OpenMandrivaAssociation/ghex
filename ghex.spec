@@ -6,7 +6,7 @@
 Name: %name
 Summary: GNOME Hexadecimal Editor
 Version: 2.22.0
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPL
 Group: Editors
 Url: http://pluton.ijs.si/~jaka/gnome.html#GHEX
