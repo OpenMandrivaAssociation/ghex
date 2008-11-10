@@ -6,8 +6,8 @@
 Name: %name
 Summary: GNOME Hexadecimal Editor
 Version: 2.22.0
-Release: %mkrel 2
-License: GPL
+Release: %mkrel 3
+License: GPLv2+
 Group: Editors
 Url: http://pluton.ijs.si/~jaka/gnome.html#GHEX
 Source: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
@@ -58,7 +58,6 @@ libghex
 %setup -q
 
 %build
-
 %configure2_5x
 %make
 
@@ -74,10 +73,6 @@ desktop-file-install --vendor="" \
 
 
 %{find_lang} %name-2.0 --with-gnome --all-name
-
-#for omf in %buildroot%_datadir/omf/ghex/ghex2-??*.omf;do 
-#echo "%lang($(basename $omf|sed -e s/eog-// -e s/.omf//)) $(echo $omf|sed -e s!%buildroot!!)" >> %name-2.0.lang
-#done
 
 %post
 %if %mdkversion < 200900
@@ -118,8 +113,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/applications/*
 %_datadir/icons/hicolor/*/apps/*ghex.*
 %{_datadir}/gnome-2.0/ui/*
-#%dir %{_datadir}/omf/ghex
-#%{_datadir}/omf/ghex/ghex-C.omf
 
 %files -n %libname
 %defattr(-, root, root)
