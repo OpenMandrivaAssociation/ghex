@@ -5,12 +5,13 @@
 
 Name: %name
 Summary: GNOME Hexadecimal Editor
-Version: 2.22.0
-Release: %mkrel 3
+Version: 2.24.0
+Release: %mkrel 1
 License: GPLv2+
 Group: Editors
 Url: http://pluton.ijs.si/~jaka/gnome.html#GHEX
 Source: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
+Patch: ghex-2.24.0-format-strings.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: libgnomeprintui-devel >= 2.2
 BuildRequires: libglade2.0-devel
@@ -56,6 +57,7 @@ libghex
 
 %prep
 %setup -q
+%patch -p1 -b .format-strings
 
 %build
 %configure2_5x
