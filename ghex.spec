@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(gtk+-3.0) >= 3.0
 BuildRequires:	pkgconfig(gconf-2.0)
 BuildRequires:	pkgconfig(gail-3.0)
 BuildRequires:	pkgconfig(xml2po)
+BuildRequires:	xsltproc
 
 %description
 GHex allows the user to load data from any file, view and edit it in either
