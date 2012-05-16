@@ -10,7 +10,7 @@ Release:	1
 License:	GPLv2+
 Group:		Editors
 Url:		http://live.gnome.org/Ghex
-Source0:	http://download.gnome.org/sources/%{name}/%{name}-%{version}.tar.xz
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 
 BuildRequires:	gettext
 BuildRequires:	intltool
