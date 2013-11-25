@@ -5,12 +5,12 @@
 
 Summary:	GNOME Hexadecimal Editor
 Name:		ghex
-Version:	3.8.1
+Version:	3.10.0
 Release:	1
 License:	GPLv2+
 Group:		Editors
 Url:		http://live.gnome.org/Ghex
-Source0:	ftp://ftp.gnome.org:21/pub/GNOME/sources/ghex/3.8/%{name}-%{version}.tar.xz
+Source0:	ftp://ftp.gnome.org:21/pub/GNOME/sources/ghex/3.10/%{name}-%{version}.tar.xz
 
 BuildRequires:	gettext
 BuildRequires:	intltool
@@ -296,4 +296,5 @@ desktop-file-install --vendor="" \
 
 * Thu Jul 20 2000 Götz Waschk <waschk@linux-mandrake.com> 1.1.3-1mdk
 - initial Mandrake package
+
 
