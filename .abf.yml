@@ -1,4 +1,5 @@
 removed_sources:
+  ghex-3.10.0.tar.xz: 1292ef240485b6d09554f3752ca5db09acf29818
   ghex-3.8.1.tar.xz: b52800870b320c352ecae6e61ab26c3de5b12b2c
 sources:
-  ghex-3.10.0.tar.xz: 1292ef240485b6d09554f3752ca5db09acf29818
+  ghex-3.10.1.tar.xz: f7bafd4f0e8374064810af75f21a257f02b8bbb5
