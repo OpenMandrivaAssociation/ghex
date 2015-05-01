@@ -7,7 +7,7 @@ Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
 Version:	3.10.1
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		Editors
 Url:		http://live.gnome.org/Ghex
@@ -19,7 +19,6 @@ BuildRequires:	itstool
 BuildRequires:	perl-XML-Parser
 BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(gail-3.0)
-BuildRequires:	pkgconfig(gconf-2.0)
 BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(gtk+-3.0) >= 3.0
 BuildRequires:	pkgconfig(xml2po)
