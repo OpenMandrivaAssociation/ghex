@@ -3,6 +3,8 @@
 %define libname		%mklibname gtkhex %{api} %{major}
 %define develname	%mklibname -d gtkhex
 
+%define _disable_rebuild_configure 1
+
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
