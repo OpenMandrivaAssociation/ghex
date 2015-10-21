@@ -6,8 +6,8 @@
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
-Version:	3.10.1
-Release:	8
+Version:	3.18.0
+Release:	1
 License:	GPLv2+
 Group:		Editors
 Url:		http://live.gnome.org/Ghex
@@ -70,7 +70,7 @@ desktop-file-install --vendor="" \
 %doc AUTHORS README
 %{_bindir}/*
 %{_datadir}/applications/*
-%{_datadir}/icons/hicolor/*/apps/*ghex.*
+%{_datadir}/icons/hicolor/*/apps/*ghex*.*
 %{_datadir}/icons/HighContrast/*/apps/*ghex.*
 %{_datadir}/GConf/gsettings/ghex.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.GHex.gschema.xml
