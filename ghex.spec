@@ -8,13 +8,14 @@
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
-Version:	3.18.0
-Release:	2
+Version:	3.18.4
+Release:	1
 License:	GPLv2+
 Group:		Editors
 Url:		http://live.gnome.org/Ghex
 Source0:	https://download.gnome.org/sources/ghex/3.10/%{name}-%{version}.tar.xz
 
+BuildRequires:	meson
 BuildRequires:	gettext
 BuildRequires:	intltool
 BuildRequires:	itstool
@@ -53,12 +54,11 @@ libghex.
 %setup -q
 
 %build
-%configure --disable-compile-warnings
-
-%make
+%meson
+%meson_build
 
 %install
-%makeinstall_std
+%meson_install
 
 desktop-file-install --vendor="" \
 	--remove-category="Application" \
