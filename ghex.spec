@@ -72,11 +72,11 @@ desktop-file-install --vendor="" \
 %doc README.md
 %{_bindir}/*
 %{_datadir}/applications/*
-#{_datadir}/icons/hicolor/*/apps/org.gnome.GHex.png
-#{_datadir}/icons//hicolor/scalable/apps/org.gnome.GHex-symbolic.svg
-#{_datadir}/GConf/gsettings/ghex.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.GHex.gschema.xml
-%{_datadir}/metainfo/org.gnome.GHex.appdata.xml 
+%{_datadir}/metainfo/org.gnome.GHex.appdata.xml
+%{_iconsdir}/hicolor/scalable/apps/org.gnome.GHex.Devel.svg
+%{_iconsdir}/hicolor/scalable/apps/org.gnome.GHex.svg
+%{_iconsdir}/hicolor/symbolic/apps/org.gnome.GHex-symbolic.svg
 
 %files -n %{libname}
 %{_libdir}/libgtkhex-%{api}.so.%{major}*
