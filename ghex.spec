@@ -69,11 +69,11 @@ desktop-file-install --vendor="" \
 %find_lang %{name}-%{api} --with-gnome --all-name
 
 %files -f %{name}-%{api}.lang
-%doc AUTHORS README
+%doc README.md
 %{_bindir}/*
 %{_datadir}/applications/*
-%{_datadir}/icons/hicolor/*/apps/org.gnome.GHex.png
-%{_datadir}/icons//hicolor/scalable/apps/org.gnome.GHex-symbolic.svg
+#{_datadir}/icons/hicolor/*/apps/org.gnome.GHex.png
+#{_datadir}/icons//hicolor/scalable/apps/org.gnome.GHex-symbolic.svg
 #{_datadir}/GConf/gsettings/ghex.convert
 %{_datadir}/glib-2.0/schemas/org.gnome.GHex.gschema.xml
 %{_datadir}/metainfo/org.gnome.GHex.appdata.xml 
