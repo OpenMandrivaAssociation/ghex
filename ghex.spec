@@ -8,7 +8,7 @@
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
-Version:	3.18.4
+Version:	3.41.0
 Release:	1
 License:	GPLv2+
 Group:		Editors
