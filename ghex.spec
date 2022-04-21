@@ -1,6 +1,7 @@
 %define api		4
 %define major		0
 %define libname		%mklibname gtkhex %{api} %{major}
+%define girname		%mklibname gtkhex-gir %{api}
 %define develname	%mklibname -d gtkhex
 
 %define _disable_rebuild_configure 1
@@ -28,6 +29,8 @@ BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(xml2po)
 
+Requires:	%{libname} = %{version}-%{release}
+
 %description
 GHex allows the user to load data from any file, view and edit it in either
 hex or ascii. A must for anyone playing games that use non-ascii format for
@@ -40,12 +43,21 @@ Group:		System/Libraries
 
 %description -n %{libname}
 This contains the shared library needed by ghex.
+
+%package -n %{girname}
+Summary:	GObject Introspection interface description for Hex
+Group:		System/Libraries
+Requires:	%{libname} = %{version}-%{release}
+
+%description -n %{girname}
+GObject Introspection interface description for Hex.
  
 %package -n %{develname}
 Summary:	Development files for the GNOME Hexadecimal Editor library 
 
 Group:		Development/C
 Requires:	%{libname} = %{version}-%{release}
+Requires:	%{girname} = %{version}-%{release}
 Provides:	%{name}-devel = %{version}-%{release}
 
 %description -n %{develname}
@@ -82,11 +94,13 @@ desktop-file-install --vendor="" \
 
 %files -n %{libname}
 %{_libdir}/libgtkhex-%{api}.so.%{major}*
+{_libdir}/gtkhex-%{api}/libhex-buffer-mmap.so
+
+%files -n %{girname}
+%{_libdir}/girepository-1.0/Hex-%{api}.typelib
 
 %files -n %{develname}
 %{_libdir}/libgtkhex-%{api}.so
 %{_libdir}/pkgconfig/gtkhex-%{api}.pc
 %{_includedir}/gtkhex-%{api}
-
-
-
+%{_datadir}/gir-1.0/Hex-%{api}.gir
