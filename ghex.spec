@@ -1,4 +1,4 @@
-%define api		3
+%define api		4
 %define major		0
 %define libname		%mklibname gtkhex %{api} %{major}
 %define develname	%mklibname -d gtkhex
