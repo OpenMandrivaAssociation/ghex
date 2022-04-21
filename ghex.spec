@@ -22,6 +22,7 @@ BuildRequires:	intltool
 BuildRequires:	itstool
 BuildRequires:	perl-XML-Parser
 BuildRequires:	desktop-file-utils
+BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	pkgconfig(gail-3.0)
 BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(gtk4)
