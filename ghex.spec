@@ -94,7 +94,7 @@ desktop-file-install --vendor="" \
 
 %files -n %{libname}
 %{_libdir}/libgtkhex-%{api}.so.%{major}*
-%{_libdir}/gtkhex-%{api}/libhex-buffer-mmap.so
+%{_libdir}/gtkhex-%{api}.0/libhex-buffer-mmap.so
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/Hex-%{api}.typelib
