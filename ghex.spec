@@ -4,16 +4,17 @@
 %define develname	%mklibname -d gtkhex
 
 %define _disable_rebuild_configure 1
+%global url_ver %%(echo %{version} | cut -d. -f1)
 
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
-Version:	3.41.1
+Version:	42.1
 Release:	1
 License:	GPLv2+
 Group:		Editors
 Url:		http://live.gnome.org/Ghex
-Source0:	https://download.gnome.org/sources/ghex/3.10/%{name}-%{version}.tar.xz
+Source0:	https://download.gnome.org/sources/ghex/%{ulr_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	meson
 BuildRequires:	gettext
@@ -23,7 +24,7 @@ BuildRequires:	perl-XML-Parser
 BuildRequires:	desktop-file-utils
 BuildRequires:	pkgconfig(gail-3.0)
 BuildRequires:	pkgconfig(gnome-doc-utils)
-BuildRequires:	pkgconfig(gtk+-3.0) >= 3.0
+BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(xml2po)
 
 %description
