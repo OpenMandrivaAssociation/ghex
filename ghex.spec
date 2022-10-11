@@ -1,5 +1,5 @@
 %define api		4
-%define major		0
+%define major		1
 %define libname		%mklibname gtkhex %{api} %{major}
 %define girname		%mklibname gtkhex-gir %{api}
 %define develname	%mklibname -d gtkhex
@@ -10,7 +10,7 @@
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
-Version:	42.3
+Version:	43.0
 Release:	1
 License:	GPLv2+
 Group:		Editors
@@ -28,6 +28,7 @@ BuildRequires:	pkgconfig(gail-3.0)
 BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(xml2po)
+BuildRequires:  pkgconfig(libadwaita-1)
 
 Requires:	%{libname} = %{version}-%{release}
 
@@ -95,6 +96,7 @@ desktop-file-install --vendor="" \
 %files -n %{libname}
 %{_libdir}/libgtkhex-%{api}.so.%{major}*
 %{_libdir}/gtkhex-%{api}.0/libhex-buffer-mmap.so
+%{_libdir}/gtkhex-4.0/libhex-buffer-direct.so
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/Hex-%{api}.typelib
