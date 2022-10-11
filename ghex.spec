@@ -10,7 +10,7 @@
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
-Version:	42.3
+Version:	43.0
 Release:	1
 License:	GPLv2+
 Group:		Editors
@@ -28,6 +28,7 @@ BuildRequires:	pkgconfig(gail-3.0)
 BuildRequires:	pkgconfig(gnome-doc-utils)
 BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(xml2po)
+BuildRequires:  pkgconfig(libadwaita-1)
 
 Requires:	%{libname} = %{version}-%{release}
 
