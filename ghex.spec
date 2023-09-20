@@ -10,12 +10,12 @@
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
-Version:	44.2
-Release:	1
+Version:	45
+Release:	0.beta0
 License:	GPLv2+
 Group:		Editors
-Url:		http://live.gnome.org/Ghex
-Source0:	https://download.gnome.org/sources/ghex/%{ulr_ver}/%{name}-%{version}.tar.xz
+Url:		https://live.gnome.org/Ghex
+Source0:	https://download.gnome.org/sources/ghex/%{ulr_ver}/%{name}-%{version}.beta.tar.xz
 
 BuildRequires:	meson
 BuildRequires:	gettext
@@ -66,7 +66,7 @@ This contains the development files needed to compile applications with
 libghex.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}.beta
 
 %build
 %meson
