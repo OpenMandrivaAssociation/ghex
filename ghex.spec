@@ -10,7 +10,7 @@
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
-Version:	48.alpha
+Version:	48.beta2
 Release:	1
 License:	GPLv2+
 Group:		Editors
