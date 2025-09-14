@@ -88,7 +88,7 @@ desktop-file-install --vendor="" \
 %{_bindir}/*
 %{_datadir}/applications/*
 %{_datadir}/glib-2.0/schemas/org.gnome.GHex.gschema.xml
-%{_datadir}/metainfo/org.gnome.GHex.appdata.xml
+%{_datadir}/metainfo/org.gnome.GHex.metainfo.xml
 %{_datadir}/dbus-1/services/org.gnome.GHex.service
 %{_iconsdir}/hicolor/scalable/apps/org.gnome.GHex.Devel.svg
 %{_iconsdir}/hicolor/scalable/apps/org.gnome.GHex.svg
