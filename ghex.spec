@@ -30,6 +30,8 @@ BuildRequires:	pkgconfig(gtk4)
 BuildRequires:	pkgconfig(harfbuzz-gobject)
 BuildRequires:	pkgconfig(xml2po)
 BuildRequires:  pkgconfig(libadwaita-1)
+# needed as of 2026.08.23
+BuildRequires:	pkgconfig(libunwind)
 
 Requires:	%{libname} = %{version}-%{release}
 
