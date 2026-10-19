@@ -10,8 +10,8 @@
 Summary:	GNOME Hexadecimal Editor
 
 Name:		ghex
-Version:	50.3
-Release:	2
+Version:	50.4
+Release:	1
 License:	GPLv2+
 Group:		Editors
 Url:		https://live.gnome.org/Ghex
